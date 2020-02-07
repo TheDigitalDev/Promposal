@@ -8,27 +8,38 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/WalkState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PulseBackground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story/Triggers/Promposal/PromposalCutscene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story/Triggers/Cutscene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Story/Triggers/CutsceneTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/FallingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/CutsceneState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/JumpState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Story/Triggers/Cutscene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Story/Triggers/Promposal/PromposalCutscene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/CutsceneState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Story/Triggers/CutsceneTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/States/CutsceneState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Story/Triggers/Cutscene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PulseBackground.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1XM4fJW93B5hMwZBcajPAFqUPOd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -75,6 +86,11 @@
       <option name="presentableId" value="Default" />
       <updated>1580842732521</updated>
       <workItem from="1580842737367" duration="1883000" />
+      <workItem from="1581014097428" duration="602000" />
+      <workItem from="1581015748787" duration="27000" />
+      <workItem from="1581016454445" duration="221000" />
+      <workItem from="1581020190631" duration="1123000" />
+      <workItem from="1581021471586" duration="1604000" />
     </task>
     <servers />
   </component>
@@ -83,6 +99,19 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>

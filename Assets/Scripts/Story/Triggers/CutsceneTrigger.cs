@@ -9,7 +9,6 @@ public class CutsceneTrigger : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Bee");
         _cutscene.StartCutscene();
     }
 }

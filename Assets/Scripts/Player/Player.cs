@@ -38,7 +38,6 @@ public class Player : MonoBehaviour
     public void Move(Vector2 move)
     {
         transform.Translate(new Vector2( Time.deltaTime * move.x,0f));
-        
     }
     
     public bool IsGrounded()

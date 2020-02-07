@@ -22,7 +22,6 @@ public class Cutscene : MonoBehaviour
 
     public virtual void StartCutscene()
     {
-        
     }
 
     public void OnPlayableDirectorStopped(PlayableDirector dir)
