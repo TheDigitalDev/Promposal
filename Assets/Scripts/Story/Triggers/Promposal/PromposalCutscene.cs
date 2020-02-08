@@ -5,15 +5,21 @@ using UnityEngine;
 
 public class PromposalCutscene : Cutscene
 {
-    public Player player;
+    private Player _player;
+
+    public void Start()
+    {
+        _player = Player.Instance;
+    }
+    
     public override void StartCutscene()
     {
         PlayableDirector.Play();
-        player.StateMachine.SetState(new CutsceneState(player));
+        _player.EnterCutscene();
     }
 
     public override void OnCutsceneStopped()
     {
-        player.StateMachine.SetState(new IdleState(player));
+        _player.Idle();
     }
 }
