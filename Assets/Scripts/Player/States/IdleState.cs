@@ -16,7 +16,7 @@ namespace DefaultNamespace
 
         public override void Update()
         {
-            if (player.Rigidbody2D.velocity.y > 0)
+            if (player.IsFalling())
             {
                 Exit(new FallingState(player));
                 return;

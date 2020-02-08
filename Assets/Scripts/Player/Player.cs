@@ -1,43 +1,62 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
+using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using Vector2 = UnityEngine.Vector2;
 
 public class Player : MonoBehaviour
 {
-    
+    public static Player Instance { get; private set;}
+    private SpriteRenderer _spriteRenderer;
+    private Rigidbody2D _rigidbody2D;
+    private PlayerStateMachine _stateMachine;
+    public Animator Animator { get; private set; }
+
+    /*
+     * Player Designer-Friendly Data
+     * TODO: Move to a ScriptableObject
+     */
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
-
-   
     
-    public Animator Animator { get; private set; }
-    public SpriteRenderer SpriteRenderer { get; private set; }
-    public Rigidbody2D Rigidbody2D { get; private set; }
-    public PlayerStateMachine StateMachine { get; private set; }
-    
-    public float Speed
-    {
-        get { return _speed; }
-    }
-
-    public float JumpForce
-    {
-        get { return _jumpForce; }
-    }
+    public float Speed { get { return _speed; } }
+    public float JumpForce { get { return _jumpForce; } }
     
     public void Awake()
     {
+        Instance = this;
         Animator = GetComponent<Animator>();
-        SpriteRenderer = GetComponent<SpriteRenderer>();
-        StateMachine = GetComponent<PlayerStateMachine>();
-        Rigidbody2D = GetComponent<Rigidbody2D>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _stateMachine = GetComponent<PlayerStateMachine>();
+        _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
+    public void SpawnPlayer(Vector3 position)
+    {
+        transform.position = position;
+    }
+        
+    
     public void Move(Vector2 move)
     {
         transform.Translate(new Vector2( Time.deltaTime * move.x,0f));
+    }
+
+    public void Idle()
+    {
+        _stateMachine.SetState(new IdleState(this));
+    }
+    
+    public void Jump()
+    {
+        _rigidbody2D.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+    }
+
+    public void EnterCutscene()
+    {
+        _stateMachine.SetState(new CutsceneState(this));    
     }
     
     public bool IsGrounded()
@@ -50,12 +69,17 @@ public class Player : MonoBehaviour
         return false;
     }
     
+    public bool IsFalling()
+    {
+        return _rigidbody2D.velocity.y > 0;
+    }
+    
     public void FlipSprite()
     {
-        SpriteRenderer.flipX = true;
+        _spriteRenderer.flipX = true;
     }
     public void UnFlipSprite()
     {
-        SpriteRenderer.flipX = false;
+        _spriteRenderer.flipX = false;
     }
 }

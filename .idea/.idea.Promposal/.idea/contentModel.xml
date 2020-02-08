@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\legon\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\legon\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Promposal.-2094914848.00" t="ExcludeRecursive" />
-    <e p="C:\Users\legon\OneDrive\Desktop\Secret\Promposal" t="IncludeRecursive">
+    <e p="C:\Users\Junior\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Junior\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Promposal.-500895688.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Junior\Documents\Promposal" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="GameController.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="Player.cs" t="Include" />
+            <e p="PlayerEvent.cs" t="Include" />
             <e p="PlayerStateMachine.cs" t="Include" />
             <e p="States" t="Include">
               <e p="CutsceneState.cs" t="Include" />
               <e p="FallingState.cs" t="Include" />
               <e p="IdleState.cs" t="Include" />
               <e p="JumpState.cs" t="Include" />
-              <e p="LadderClimbState.cs" t="Include" />
               <e p="State.cs" t="Include" />
               <e p="WalkState.cs" t="Include" />
             </e>
           </e>
-          <e p="PulseBackground.cs" t="Include" />
           <e p="Story" t="Include">
             <e p="Triggers" t="Include">
               <e p="Cutscene.cs" t="Include" />

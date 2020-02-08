@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.elringus.spriteglow": "https://github.com/Elringus/SpriteGlow.git#package",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.cinemachine": "2.5.0",
@@ -7,6 +8,7 @@
     "com.unity.ext.nunit": "1.0.0",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.1.4",
+    "com.unity.postprocessing": "2.3.0",
     "com.unity.render-pipelines.lightweight": "7.1.8",
     "com.unity.test-framework": "1.1.9",
     "com.unity.textmeshpro": "2.0.1",
@@ -43,5 +45,11 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
+  },
+  "lock": {
+    "com.elringus.spriteglow": {
+      "revision": "package",
+      "hash": "ddd68f4c885bbe788f9ccfc21b6038a16f9b43f1"
+    }
   }
 }

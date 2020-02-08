@@ -17,7 +17,7 @@ namespace DefaultNamespace
 
         private void Jump()
         {
-            player.Rigidbody2D.AddForce(Vector2.up * player.JumpForce, ForceMode2D.Impulse);
+            player.Jump();
         }
 
         public override void Update()
@@ -25,7 +25,7 @@ namespace DefaultNamespace
             float moveHorizontal = Input.GetAxis("Horizontal");
             player.Move(new Vector2(player.Speed * moveHorizontal * 1f,0f));
 
-            if (player.Rigidbody2D.velocity.y > 0)
+            if (player.IsFalling())
             {
                 Exit(new FallingState(player));
             }
@@ -33,10 +33,6 @@ namespace DefaultNamespace
 
         public override void HandleTriggerEnter(Collider2D collider)
         {
-            if (collider.tag == "Ladder")
-            {
-                Exit(new LadderClimbState(collider,player));
-            }
         }
     }
 }

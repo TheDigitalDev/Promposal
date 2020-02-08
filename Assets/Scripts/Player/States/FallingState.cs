@@ -39,10 +39,6 @@ namespace DefaultNamespace
         
         public override void HandleTriggerEnter(Collider2D collider)
         {
-            if (collider.tag == "Ladder")
-            {
-                Exit(new LadderClimbState(collider,player));
-            }
         }
 
     }

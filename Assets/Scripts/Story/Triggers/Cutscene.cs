@@ -20,9 +20,7 @@ public class Cutscene : MonoBehaviour
         PlayableDirector.stopped -= OnPlayableDirectorStopped;
     }
 
-    public virtual void StartCutscene()
-    {
-    }
+    public virtual void StartCutscene(){}
 
     public void OnPlayableDirectorStopped(PlayableDirector dir)
     {
@@ -33,8 +31,5 @@ public class Cutscene : MonoBehaviour
         OnCutsceneStopped();
     }
     
-    public virtual void OnCutsceneStopped()
-    {
-        
-    }
+    public virtual void OnCutsceneStopped(){}
 }
